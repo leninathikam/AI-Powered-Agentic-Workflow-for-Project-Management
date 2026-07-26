@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "email-router-workflow"
+version = "0.1.0"
+description = "Agentic workflow for project management"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy==1.26.4",
+  "pandas==2.2.3",
+  "openai==1.78.1",
+  "python-dotenv==1.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
